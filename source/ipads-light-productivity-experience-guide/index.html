@@ -1,0 +1,487 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- Head tag -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!--360 使用 Google Chrome Frame-->
+  <meta name="renderer" content="webkit">
+  <!--百度禁止转码-->
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <!--Description-->
+  
+  <meta name="description" content="高质量项目源码分享">
+  
+  <meta name="google-site-verification" content="J4gssmXGNI9-DfJ9w52mL5KFPlRCYvySveEN0RJFZHU" />
+  <!--Author-->
+  
+  <meta name="author" content="Admin">
+  
+  <!--Open Graph Title-->
+  
+  <meta property="og:title" content="iPad 轻度生产力体验指北" />
+  
+  <!--Open Graph Description-->
+  
+  <meta property="og:description" content="高质量项目源码分享" />
+  
+  <!--Open Graph Site Name-->
+  <meta property="og:site_name" content="Java 源码" />
+  <!--Type page-->
+  
+  <meta property="og:type" content="article" />
+  
+  <!--Page Cover-->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Title -->
+  
+  <title>iPad 轻度生产力体验指北 - Java 源码</title>
+  <!-- 添加到主屏后的标题（iOS 6 新增） -->
+  <meta name="apple-mobile-web-app-title" content="Java 源码">
+  <!-- 是否启用 WebApp 全屏模式 -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!-- 禁止数字识自动别为电话号码 -->
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/yuanjianchen/yuanjianchen.github.io/medias/logo/avatar.png">
+  <!--Apple iOS Safari ICON-->
+  <link rel="apple-touch-icon" sizes="57x57" href="https://cdn.jsdelivr.net/gh/yuanjianchen/yuanjianchen.github.io/medias/logo/avatar.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="https://cdn.jsdelivr.net/gh/yuanjianchen/yuanjianchen.github.io/medias/logo/avatar.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="https://cdn.jsdelivr.net/gh/yuanjianchen/yuanjianchen.github.io/medias/logo/avatar.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="https://cdn.jsdelivr.net/gh/yuanjianchen/yuanjianchen.github.io/medias/logo/avatar.png" />
+  <!-- 添加 RSS 订阅 -->
+  <link rel="alternate" type="application/rss+xml" title="Java 源码" href="/atom.xml" />
+  <!-- uc强制竖屏 -->
+  <meta name="screen-orientation" content="portrait">
+  <!-- QQ强制竖屏 -->
+  <meta name="x5-orientation" content="portrait">
+  <!-- UC强制全屏 -->
+  <meta name="full-screen" content="yes">
+  <!-- QQ强制全屏 -->
+  <meta name="x5-fullscreen" content="true">
+  <!-- UC应用模式 -->
+  <meta name="browsermode" content="application">
+  <!-- QQ应用模式 -->
+  <meta name="x5-page-mode" content="app">
+  <!-- Custom CSS/Sass -->
+  
+<link rel="stylesheet" href="/css/mdui.min.css">
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  <!--highlight.js CSS-->
+  
+  
+<link rel="stylesheet" href="/css/highlight/tomorrow-night-eighties.css">
+
+  
+  
+  <!-- jquery -->
+  <script src="//cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <!-- PJAX -->
+  <script src="//cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
+  <script>
+  </script>
+  
+  <script data-pjax src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+  <script data-pjax src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  
+  
+  <!-- Google Analytics with Cloudflare Async -->
+  <script>
+    window.ga_tid = "UA-141010711-2"; // {String} The trackerID of your site.
+    window.ga_api = "https://async-google-analytics.disqusapi.workers.dev/"; // {String} The route of your cloudflare workers you just registered before.
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/cfga@1.0.1" async></script>
+  
+  
+  
+  
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <!-- Nav -->
+  <div style="display: none;" id="nav_menu" class="itp-nav-menu">
+  <div class="mdui-dialog-title">导航</div>
+  <div class="mdui-row-xs-2 mdui-nav-list" style="padding-bottom: 10px;">
+    
+    <a class="mdui-list-item mdui-ripple mdui-col" href="/">
+      <i class="mdui-list-item-icon mdui-icon material-icons itp-drawer-icon">home</i>
+      <div class="mdui-list-item-content itp-header-actions-menu" style="font-size: 14px; color: #757575;">首页
+      </div>
+    </a>
+    
+    <a class="mdui-list-item mdui-ripple mdui-col" href="/archives/">
+      <i class="mdui-list-item-icon mdui-icon material-icons itp-drawer-icon">move_to_inbox</i>
+      <div class="mdui-list-item-content itp-header-actions-menu" style="font-size: 14px; color: #757575;">归档
+      </div>
+    </a>
+    
+    <a class="mdui-list-item mdui-ripple mdui-col" href="/about.html">
+      <i class="mdui-list-item-icon mdui-icon material-icons itp-drawer-icon">person</i>
+      <div class="mdui-list-item-content itp-header-actions-menu" style="font-size: 14px; color: #757575;">关于
+      </div>
+    </a>
+    
+    <a class="mdui-list-item mdui-ripple mdui-col" href="/links.html">
+      <i class="mdui-list-item-icon mdui-icon material-icons itp-drawer-icon">link</i>
+      <div class="mdui-list-item-content itp-header-actions-menu" style="font-size: 14px; color: #757575;">友链
+      </div>
+    </a>
+    
+  </div>
+</div>
+<header id="header" class="itp-header noprn">
+  <div id="appbar-index" class="mdui-appbar mdui-appbar-fixed itp-appbar_index mdui-shadow-0">
+    <div id="toolbar-index" class="mdui-toolbar mdui-shadow-0" style="justify-content: center;">
+      <a class="mdui-btn mdui-btn-icon itp-drawer-btn itp-header-actions_menu" style="color: #fff" data-fancybox data-src="#nav_menu" href="javascript:;"><i
+          class="mdui-icon material-icons">menu</i></a>
+      <a href="/" class="itp-header-title mdui-typo-title">Java 源码</a>
+      <div class="itp-nav-action">
+        
+        <a href="/" class="mdui-btn itp-header-actions" style="color: #fff">首页</a>
+        
+        <a href="/archives/" class="mdui-btn itp-header-actions" style="color: #fff">归档</a>
+        
+        <a href="/about.html" class="mdui-btn itp-header-actions" style="color: #fff">关于</a>
+        
+        <a href="/links.html" class="mdui-btn itp-header-actions" style="color: #fff">友链</a>
+        
+      </div>
+      <div class="itp-nav-action">
+        
+        <a href="/search.html" class="mdui-btn mdui-btn-icon itp-header-search-btn"><i class="mdui-icon material-icons"
+            style="line-height: 20px;">search</i></a>
+        
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Cover -->
+  <div class="itp-cover noprn">
+  <div class="itp-cover-img">
+    
+    <img class="nofancy" src="https://imgur.lzmun.com/picgo/20200504100314.jpg">
+    
+  </div>
+  <div class="itp-cover-text">
+    <div class="itp-cover-title mdui-text-center"
+      style="color: #fff; opacity: 1;">
+      iPad 轻度生产力体验指北</div>
+    <div class="itp-cover-subtitle mdui-text-center"
+      style="color: #fff; opacity: 0.8;">
+      
+2018-09-29
+<span> / </span>
+
+<a class="category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
+
+
+<span> / </span>
+3.3k
+<style>
+  @media print {
+    .itp-cover-subtitle a {
+      color: #000 !important;
+    }
+  }
+
+  @media screen {
+    .itp-cover-subtitle a {
+      color: #fff !important;
+    }
+  }
+</style>
+</div>
+  </div>
+</div>
+<div class="itp-cover noscreen">
+  <div class="itp-cover-img">
+    
+    <img class="nofancy nodisplay" src="https://imgur.lzmun.com/picgo/20200504100314.jpg">
+    
+  </div>
+  <div class="itp-cover-text">
+    <div class="itp-cover-title mdui-text-center"
+      style="color: #000; opacity: 1;">
+      iPad 轻度生产力体验指北</div>
+    <div class="itp-cover-subtitle mdui-text-center"
+      style="color: #000 !important; opacity: 0.8;">
+      
+2018-09-29
+<span> / </span>
+
+<a class="category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
+
+
+<span> / </span>
+3.3k
+<style>
+  @media print {
+    .itp-cover-subtitle a {
+      color: #000 !important;
+    }
+  }
+
+  @media screen {
+    .itp-cover-subtitle a {
+      color: #fff !important;
+    }
+  }
+</style>
+</div>
+  </div>
+</div>
+  <!-- Main Content -->
+  
+<!--<progress id="content_progress" value="0"></progress>-->
+<div class="mdui-container">
+  <div class="content-area">
+    <div class="mdui-row">
+      <div class="mdui-col-md-2 mdui-col-xs-down"></div>
+      <div class="mdui-col-md-8 mdui-col-xs-12">
+        <div class="mdui-card itp-post-card">
+          <!--正文-->
+          <section class="mdui-card-content itp-post-content article" role="article">
+            <h2 id="「这个电脑，拿掉了电脑的条条框框。」"><a href="#「这个电脑，拿掉了电脑的条条框框。」" class="headerlink" title="「这个电脑，拿掉了电脑的条条框框。」"></a>「这个电脑，拿掉了电脑的条条框框。」</h2><p>iPad 系列产品，在 iPad Pro 产品线发布以前，可以说只是一种「阅读」，「浏览」的工具，是一个用于获取信息的工具。尽管在小部分领域中得到了较好的应用，但鉴于触控打字的不便，生产力软件的缺失，iPad 在生产力上一直难有起色。</p>
+<p>iPad Pro 产品线的发布，使得 iPad 系列产品开始在生产力上有了大跨度的进步，iOS 加入了对快捷键的原生支持，分屏多任务的加入，由 macOS 引入了 dock 栏的概念，加之 iOS 一贯的流畅和稳定，iPad 系列突然在生产力领域中撕开了一条口子。</p>
+<p>本文的体验皆基于 iPad 2018，搭配 Apple Pencil。经过一段时间以来在日常学习和生活中，对 iPad 较为全面的使用，我认为 iPad 在轻度任务的环境下完全能够胜任电脑，甚至有过之而无不及。</p>
+<p>苹果官方新款 iPad 2018 的宣传是，「这个电脑，拿掉了电脑的条条框框」，自然是对这一款 iPad 寄予厚望的。从这一代开始，iPad 系列产品开始转攻教育市场，面向教育市场 299 美元的售价，较为便宜的罗技 Crayon 替代了售价高达 99 美元的 Apple Pencil，使得「用 iPad 进行书写」这一任务不再昂贵。</p>
+<h2 id="便携-拿出即可使用的迅速"><a href="#便携-拿出即可使用的迅速" class="headerlink" title="便携 | 拿出即可使用的迅速"></a>便携 | 拿出即可使用的迅速</h2><p>官方对 iPad 的定义，便是「便携式电脑」。自然 iPad 在便携性上，非常明显地，iPad 的便携性远远高于笔记本电脑，即使是最为轻薄的 new Macbook，也无法拥有像 iPad 一样「从包中拿出即可使用」的方便。</p>
+<p><img src="https://imgur.lzmun.com/picgo/iPad-back.png" alt=""></p>
+<p>如果说要通过一个数据来衡量便携性，那重量将是最好的一个选择。根据官网的信息，2018 款的 iPad 重量为 469 克，作为对比，Macbook 的重量为 0.92 千克，13 英寸版本的 Macbook Pro 为 1.97 千克，15 英寸版本的 Macbook Pro 为 1.83 千克（好奇怪居然还轻一点），13 英寸版本的小米笔记本 air 为 1.3 千克。</p>
+<p>也就是说，一台 iPad 的重量约为最轻薄的传统笔记本的一半。与各种专业课的书籍一同塞入背包中，iPad 的重量可以说是几乎感受不到。</p>
+<h2 id="书写-Apple-Pencil"><a href="#书写-Apple-Pencil" class="headerlink" title="书写 | Apple Pencil"></a>书写 | Apple Pencil</h2><p>新款的 iPad，给 iPad 产品线带来了原来仅在 iPad Pro 上才有的 Apple Pencil 的支持，并且额外还支持罗技的 Crayon 蜡笔。</p>
+<pre><code class="Markdown">在 Apple Store 购买 Apple Pencil 一周之后，发现罗技 Crayon 开始在 Apple Store 上架，但是并没有提供适用的设备，故只能从各大媒体的新闻中感受到「蜡笔」与「铅笔」的不同。</code></pre>
+<p>因为是用于做笔记，那么 Apple Pencil 当然是必不可少的一个配件。</p>
+<p>Apple Pencil 作为苹果推出的第一款触控笔，在与 Surface Pen 的对标中交出了不错的答卷。20ms 的「业界最低」延迟，倾斜检测，压力感应以彰显出 Apple Pencil 的自信，而类似于传统铅笔的简洁外观，则传承了 Apple 一贯的设计风格。</p>
+<p>使用 Apple Pencil 与 iPad 做笔记，我选择了「Notability」作为我的笔记软件。这款软件从 Apple Pencil 发布之前，就为传统的电容触控比制作了防误触的功能，因此也获得了一定的知名度。在 Apple Pencil 发布之后，获得了系统级防误触功能的 Notability 在使用体验上更上一层楼，可以媲美纸笔的书写体验。</p>
+<p><img src="https://imgur.lzmun.com/picgo/ipad-notability-flash.png" alt=""></p>
+<p><img src="https://imgur.lzmun.com/picgo/ipad-notability.png" alt=""></p>
+<p>Notability 可以将笔记归类到不同的文件夹，而文件夹又可以归类到不同的项目之中。所有的笔记都可以按文件夹的形式进行索引。并且，在最近的更新中，notability 还增加了对手写内容搜索的支持。这样一来，查找笔记的内容变得更加方便了，「电子化笔记」更能凸显出其独特而不可替代的优势。</p>
+<p><img src="https://imgur.lzmun.com/picgo/ipad-notability-search.jpg" alt=""></p>
+<h2 id="阅读-方便而独特的阅读体验"><a href="#阅读-方便而独特的阅读体验" class="headerlink" title="阅读 | 方便而独特的阅读体验"></a>阅读 | 方便而独特的阅读体验</h2><p>对待阅读，不同的读者一定会分为两大阵营——电子阅读和纸质阅读。</p>
+<p>一个月以前，尝试使用 PDFelement 阅读法学教材的我，在下定决心购买纸质教材的时候，发出了「真香」的感叹。一度感到电子阅读并不能媲美纸质阅读的效率。</p>
+<p><img src="https://imgur.lzmun.com/picgo/iPad-paperbook-weibo.jpg" alt=""></p>
+<p>在使用 PDFelement 后，感觉电子阅读相比起纸质阅读，并不能很好地体现出电子阅读的方便、快捷、灵活的特点。并且，PDFelement 也不能很好地对全书的笔记进行整理和归纳，更缺少纸质书翻页的那种「手感」。</p>
+<p>但使用 iPad 阅读教材的体验真的那么差劲吗？事实证明，是使用的 APP 还有进步的空间。</p>
+<p>如果你正在使用普通的 PDF 阅读器，感觉整理和归纳笔记，复习内容不方便的话，那么 MarginNote 一定值得一试。</p>
+<p>在写作这篇文章时，MarginNote 3 已经推出，但 APP 内购售价为 88 元，而上一代的 MarginNote Pro 只需 18 元。贫穷限制了我购买新版本的软件，于是我便购买了 MarginNote Pro。</p>
+<p>虽然 MarginNote 3 已经推出，但旧版本的 MarginNote Pro 依然在更新，最近一次更新为 6 天前（9 月 23 日），更新内容为适配了最新的 iOS12。</p>
+<p>MarginNote 号称「一款会重塑学习方式的阅读笔记工具」，事实证明，MarginNote 确实做的不错。可以将 PDF 等格式的书籍导入到 MarginNote 中，并且对 PDF 的每一个标注都会自动生成一张卡片，随后便可在大纲和导图视图中进行整理和归纳，将书中的内容组织成为一张思维导图。</p>
+<p><img src="https://imgur.lzmun.com/picgo/iPad-marginnote-2-pro-mindmap.png" alt=""></p>
+<p>由于使用的不是最新的 MarginNote 3，所以就不将详细的使用体验写上来了。</p>
+<h2 id="传输-「隔空投送」与捷径"><a href="#传输-「隔空投送」与捷径" class="headerlink" title="传输 | 「隔空投送」与捷径"></a>传输 | 「隔空投送」与捷径</h2><p>如果你拥有「苹果全家桶」设备，那么传输文件将是一件简单而优雅的事情。只需点击分享，弹出的菜单中便会显示可以进行隔空投送操作的设备。</p>
+<p>然而我目前使用的设备，除了 iPad，还有现在正在用于打字的一台 Windows 笔记本（正在写作这一段落的时候，我购买的蓝牙键盘还没有送达），在 Windows 设备上，自然无法使用苹果全家桶的「隔空投送」功能。这是我们则需要使用一些第三方软件。</p>
+<p>在可以与 Windows 设备互传文件的所有软件中，使用最多的一定是 QQ。自从 QQ 加入了「面对面快传」和「传文件」功能后，便一举成为文件传输应用的「榜首」。不过很遗憾的是，iPad 上的 QQ 并没有加入面对面快传的功能，但是传输文件到电脑和传输文件到手机的功能还是得到了保留。</p>
+<p><img src="https://imgur.lzmun.com/picgo/ipad-qqhd-file-drop.png" alt=""></p>
+<p>除了 QQ 之外，一些原来 Android 平台上的老牌文件传输应用，在 iOS 平台上也能获得不错的体验，例如 Airdroid，快牙，以及茄子快传等。而在 iOS12 中新增的「捷径」功能，也使得 iOS 向 Windows 传输文件变得更为便捷。</p>
+<p>为了方便地从 iPad 向我的 Windows 笔记本传输图片，我制作了两个简单的「捷径」，一个在组件列表中显示，用于选择图片并发送到指定的邮箱，一个在「共享列表」中显示，用于发送特定的内容到邮箱。</p>
+<p><img src="https://imgur.lzmun.com/picgo/iPad-Shorcuts-from-widget-mask.jpg" alt=""></p>
+<p><img src="https://imgur.lzmun.com/picgo/iPad-Shorcuts-from-list-mask.jpg" alt=""></p>
+<h2 id="捷径-工作流-让-iPad-如有神助"><a href="#捷径-工作流-让-iPad-如有神助" class="headerlink" title="捷径 / 工作流 | 让 iPad 如有神助"></a>捷径 / 工作流 | 让 iPad 如有神助</h2><p>上一段中提到的「捷径」，其前身即为 iOS11 时，风靡一时的「Workflow」。它可以将 iOS 系统上的一些复杂的任务进行组合，从而能够以寥寥几步操作去简便地完成。同时还可以让用户通过系统提供的 API 来创建自己的工具。</p>
+<p>随后，Apple 将 Workflow 收购，并且更名为「捷径」，整合在 iOS12 中作为系统功能的一部分推出。更名后的捷径 APP 功能与 Workflow 并没有太大的出入，但是新增了很多原本不具备的 API，并且也支持通过 Siri 操作捷径。</p>
+<p><img src="https://imgur.lzmun.com/picgo/iPad-Shorcuts-list.jpg" alt=""></p>
+<h2 id="尾声-一个工具的属性，在于用户对他的态度"><a href="#尾声-一个工具的属性，在于用户对他的态度" class="headerlink" title="尾声 | 一个工具的属性，在于用户对他的态度"></a>尾声 | 一个工具的属性，在于用户对他的态度</h2><p>在每一代 iPad 推出的前后，都会有诸多对新 iPad 的畅想，同时也会有 iPad「沦为」游戏机甚至是泡面盖的吐槽。对于 iPad，一千个人可能会有一千种使用的方式，设计师们会用它来绘制草图，或者向他人展示自己的成果。作家们通过 iPad 获取灵感，完成写作。游戏行业的从业者们通过 iPad 直播手游，或者在直播的过程中与观众们互动。客服行业和窗口行业通过 iPad 向客户获取表单等信息。零售业通过 iPad 进行点单，收银。学生们通过 iPad 进行笔记，查阅资料，或用 iPad 替代课本。</p>
+<p>iPad 作为目前平板电脑行业的标杆产品，它可以胜任很多方面的工作。它只提供一个工具，最终它是作为电视机，作为终端设备，作为游戏机，作为笔记本，作为课本，甚至是泡面盖，都只在于用户使用它的方式。</p>
+<p>对我而言，我尽力地将 iPad 作为我学习的辅助工具，使用 iPad 来做笔记，阅读书籍、文献以及论文，使用 iPad 来规划我的学习，生活与工作，使用 iPad 来尝试新晋的各种 APP 并作出测评，使用 iPad 来给自己得到更大的提升。而不是，将他作为游戏机，作为娱乐和消遣的平台。</p>
+
+          </section>
+          <!--文章底部信息-->
+          <section class="mdui-card-content itp-post-content">
+            <div class="mdui-text-center">
+              <div class="itp-post-subtitle">
+                2018-09-29
+                
+                <span> / </span>
+                <a class="category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
+                
+                <span> / </span>
+                3.3k
+              </div>
+            </div>
+            
+            <div class="mdui-text-center" style="padding-top: 2px; font-size: .75rem !important;">
+              <div class="tags-links">
+                
+                <div class="mdui-chip">
+                  <a class="mdui-chip-title" href="/tags/笔记/" rel="tag">
+                    笔记
+                  </a>
+                </div>
+                
+                <div class="mdui-chip">
+                  <a class="mdui-chip-title" href="/tags/iPad/" rel="tag">
+                    iPad
+                  </a>
+                </div>
+                
+                <div class="mdui-chip">
+                  <a class="mdui-chip-title" href="/tags/iOS/" rel="tag">
+                    iOS
+                  </a>
+                </div>
+                
+                <div class="mdui-chip">
+                  <a class="mdui-chip-title" href="/tags/生产力/" rel="tag">
+                    生产力
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+            
+          </section>
+          <section class="mdui-card-content itp-page-select">
+            <!--文章页页面选择器-->
+<div class="pagination noprn">
+  <div class="mdui-col-xs-6">
+    
+    <div class="itp-page-select-prev">
+      <a class="mdui-btn mdui-btn-icon" href="/source/咱们好好打字，别发语音行吗/"><i
+          class="mdui-icon material-icons">arrow_back</i></a>
+      <a class="mdui-chip-title" rel="prev" href="/source/咱们好好打字，别发语音行吗/">上一页</a>
+    </div>
+    
+  </div>
+  <div class="mdui-col-xs-6">
+    
+    <div class="itp-page-select-next  mdui-float-right">
+      <a class="mdui-chip-title" rel="next" href="/source/mid-autumn-festival-2018/">下一页</a>
+      <a class="mdui-btn mdui-btn-icon" href="/source/mid-autumn-festival-2018/"><i
+          class="mdui-icon material-icons">arrow_forward</i></a>
+    </div>
+    
+  </div>
+</div>
+          </section>
+          <section class="itp-post-comment noprn">
+            <!--评论-->
+
+<!--valine-->
+<div id="vcomments"></div>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '0kSi0u9r40XN3MswJG34Sj6K-gzGzoHsz',
+    appKey: '0etVoCn0nhOS5RSYOenq0sl6',
+    path: window.location.pathname,
+    avatar: 'identicon',
+    notify: true,
+    verify: true,
+    emojiCDN: '//i0.hdslb.com/bfs/emote/',
+    emojiMaps: {
+      "tv_白眼": "c1d59f439e379ee50eef488bcb5e5378e5044ea4.png",
+      "tv_doge": "6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png",
+      "tv_坏笑": "1f0b87f731a671079842116e0991c91c2c88645a.png",
+      "tv_难过": "87f46748d3f142ebc6586ff58860d0e2fc8263ba.png",
+      "tv_生气": "26702dcafdab5e8225b43ffd23c94ac1ff932654.png",
+      "tv_委屈": "d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png",
+      "tv_斜眼笑": "911f987aa8bc1bee12d52aafe62bc41ef4474e6c.png",
+      "tv_呆": "fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png",
+      "tv_发怒": "34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png",
+      "tv_惊吓": "0d15c7e2ee58e935adc6a7193ee042388adc22af.png",
+      "tv_呕吐": "9f996894a39e282ccf5e66856af49483f81870f3.png",
+      "tv_思考": "90cf159733e558137ed20aa04d09964436f618a1.png",
+      "tv_微笑": "70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png",
+      "tv_疑问": "0793d949b18d7be716078349c202c15ff166f314.png",
+      "tv_大哭": "23269aeb35f99daee28dda129676f6e9ea87934f.png",
+      "tv_鼓掌": "1d21793f96ef4e6f48b23e53e3b9e42da833a0f6.png",
+      "tv_抠鼻": "c666f55e88d471e51bbd9fab9bb308110824a6eb.png",
+      "tv_亲亲": "a8111ad55953ef5e3be3327ef94eb4a39d535d06.png",
+      "tv_调皮": "b9c41de8e82dd7a8515ae5e3cb63e898bf245186.png",
+      "tv_笑哭": "1abc628f6d4f4caf9d0e7800878f4697abbc8273.png",
+      "tv_晕": "5443c22b4d07fb1907ccc610c8e6db254f2461b7.png",
+      "tv_点赞": "f85c354995bd99e28fc76c869bfe42ba6438eff4.png",
+      "tv_害羞": "a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png",
+      "tv_色": "61822c7e9aae5da76475e7892534545336b23a6f.png",
+      "tv_吐血": "09dd16a7aa59b77baa1155d47484409624470c77.png",
+      "tv_无奈": "ea8ed89ee9878f2fece2dda0ea8a5dbfe21b5751.png",
+      "tv_再见": "180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png",
+      "tv_流汗": "cead1c351ab8d79e9f369605beb90148db0fbed3.png",
+      "tv_偷笑": "bb690d4107620f1c15cff29509db529a73aee261.png",
+      "tv_抓狂": "fe31c08edad661d63762b04e17b8d5ae3c71a757.png",
+      "tv_黑人问号": "45821a01f51bc867da9edbaa2e070410819a95b2.png",
+      "tv_困": "241ee304e44c0af029adceb294399391e4737ef2.png",
+      "tv_打脸": "56ab10b624063e966bfcb76ea5dc4794d87dfd47.png",
+      "tv_闭嘴": "c9e990da7f6e93975e25fd8b70e2e290aa4086ef.png",
+      "tv_鄙视": "6e72339f346a692a495b123174b49e4e8e781303.png",
+      "tv_腼腆": "89712c0d4af73e67f89e35cbc518420380a7f6f4.png",
+      "tv_馋": "fc7e829b845c43c623c8b490ee3602b7f0e76a31.png",
+      "tv_可爱": "9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png",
+      "tv_发财": "34db290afd2963723c6eb3c4560667db7253a21a.png",
+      "tv_生病": "8b0ec90e6b86771092a498c54f09fc94621c1900.png",
+      "tv_流鼻血": "c32d39db2737f89b904ca32700d140a9241b0767.png",
+      "tv_尴尬": "7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png",
+      "tv_大佬": "093c1e2c490161aca397afc45573c877cdead616.png",
+      "tv_流泪": "7e71cde7858f0cd50d74b0264aa26db612a8a167.png",
+      "tv_冷漠": "b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png",
+      "tv_皱眉": "72ccad6679fea0d14cce648b4d818e09b8ffea2d.png",
+      "tv_鬼脸": "0ffbbddf8a94d124ca2f54b360bbc04feb6bbfea.png",
+      "tv_调侃": "4bc022533ef31544ca0d72c12c808cf4a1cce3e3.png",
+      "tv_目瞪口呆": "0b8cb81a68de5d5365212c99375e7ace3e7891b7.png",
+    }
+  })
+</script>
+
+          </section>
+        </div>
+      </div>
+      <div class="mdui-col-md-2 mdui-col-xs-down">
+        <!--
+
+<div id="toc" class="noprn nodisplay">
+  <ol class="itp-toc"><li class="itp-toc-item itp-toc-level-2"><a class="itp-toc-link" href="#「这个电脑，拿掉了电脑的条条框框。」"><span class="itp-toc-text">「这个电脑，拿掉了电脑的条条框框。」</span></a></li><li class="itp-toc-item itp-toc-level-2"><a class="itp-toc-link" href="#便携-拿出即可使用的迅速"><span class="itp-toc-text">便携 | 拿出即可使用的迅速</span></a></li><li class="itp-toc-item itp-toc-level-2"><a class="itp-toc-link" href="#书写-Apple-Pencil"><span class="itp-toc-text">书写 | Apple Pencil</span></a></li><li class="itp-toc-item itp-toc-level-2"><a class="itp-toc-link" href="#阅读-方便而独特的阅读体验"><span class="itp-toc-text">阅读 | 方便而独特的阅读体验</span></a></li><li class="itp-toc-item itp-toc-level-2"><a class="itp-toc-link" href="#传输-「隔空投送」与捷径"><span class="itp-toc-text">传输 | 「隔空投送」与捷径</span></a></li><li class="itp-toc-item itp-toc-level-2"><a class="itp-toc-link" href="#捷径-工作流-让-iPad-如有神助"><span class="itp-toc-text">捷径 &#x2F; 工作流 | 让 iPad 如有神助</span></a></li><li class="itp-toc-item itp-toc-level-2"><a class="itp-toc-link" href="#尾声-一个工具的属性，在于用户对他的态度"><span class="itp-toc-text">尾声 | 一个工具的属性，在于用户对他的态度</span></a></li></ol>
+</div>
+-->
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <!-- Footer -->
+<footer class="mdui-text-center itp-footer">
+  <section class="footer-info">
+    Java 源码 &copy; 2016 - 2020
+    
+    <span> / </span>
+    88k
+    
+    
+    
+  </section>
+  
+  </section>
+</footer>
+  <!-- After footer scripts -->
+  <!-- fancybox -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script src="/js/mdui.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+  $("code").each(function () {
+    $(this).html("<ol><li>" + $(this).html().replace(/\n/g, "\n</li><li>") + "\n</li></ol>");
+  });
+</script>
+
+
+
+<script src="/js/app.js"></script>
+
+</body>
+
+
+</html>

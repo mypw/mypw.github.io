@@ -1,0 +1,729 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- Head tag -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!--360 使用 Google Chrome Frame-->
+  <meta name="renderer" content="webkit">
+  <!--百度禁止转码-->
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <!--Description-->
+  
+  <meta name="description" content="高质量项目源码分享">
+  
+  <meta name="google-site-verification" content="J4gssmXGNI9-DfJ9w52mL5KFPlRCYvySveEN0RJFZHU" />
+  <!--Author-->
+  
+  <meta name="author" content="Admin">
+  
+  <!--Open Graph Title-->
+  
+  <meta property="og:title" content="Java 源码" />
+  
+  <!--Open Graph Description-->
+  
+  <meta property="og:description" content="高质量项目源码分享" />
+  
+  <!--Open Graph Site Name-->
+  <meta property="og:site_name" content="Java 源码" />
+  <!--Type page-->
+  
+  <meta property="og:type" content="website" />
+  
+  <!--Page Cover-->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Title -->
+  
+  <title>Java 源码 - 高质量项目源码分享</title>
+  <!-- 添加到主屏后的标题（iOS 6 新增） -->
+  <meta name="apple-mobile-web-app-title" content="Java 源码">
+  <!-- 是否启用 WebApp 全屏模式 -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!-- 禁止数字识自动别为电话号码 -->
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/yuanjianchen/yuanjianchen.github.io/medias/logo/avatar.png">
+  <!--Apple iOS Safari ICON-->
+  <link rel="apple-touch-icon" sizes="57x57" href="https://cdn.jsdelivr.net/gh/yuanjianchen/yuanjianchen.github.io/medias/logo/avatar.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="https://cdn.jsdelivr.net/gh/yuanjianchen/yuanjianchen.github.io/medias/logo/avatar.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="https://cdn.jsdelivr.net/gh/yuanjianchen/yuanjianchen.github.io/medias/logo/avatar.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="https://cdn.jsdelivr.net/gh/yuanjianchen/yuanjianchen.github.io/medias/logo/avatar.png" />
+  <!-- 添加 RSS 订阅 -->
+  <link rel="alternate" type="application/rss+xml" title="Java 源码" href="/atom.xml" />
+  <!-- uc强制竖屏 -->
+  <meta name="screen-orientation" content="portrait">
+  <!-- QQ强制竖屏 -->
+  <meta name="x5-orientation" content="portrait">
+  <!-- UC强制全屏 -->
+  <meta name="full-screen" content="yes">
+  <!-- QQ强制全屏 -->
+  <meta name="x5-fullscreen" content="true">
+  <!-- UC应用模式 -->
+  <meta name="browsermode" content="application">
+  <!-- QQ应用模式 -->
+  <meta name="x5-page-mode" content="app">
+  <!-- Custom CSS/Sass -->
+  
+<link rel="stylesheet" href="/css/mdui.min.css">
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  <!--highlight.js CSS-->
+  
+  
+<link rel="stylesheet" href="/css/highlight/tomorrow-night-eighties.css">
+
+  
+  
+  <!-- jquery -->
+  <script src="//cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <!-- PJAX -->
+  <script src="//cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
+  <script>
+  </script>
+  
+  <script data-pjax src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+  <script data-pjax src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  
+  
+  <!-- Google Analytics with Cloudflare Async -->
+  <script>
+    window.ga_tid = "UA-141010711-2"; // {String} The trackerID of your site.
+    window.ga_api = "https://async-google-analytics.disqusapi.workers.dev/"; // {String} The route of your cloudflare workers you just registered before.
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/cfga@1.0.1" async></script>
+  
+  
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <!-- Nav -->
+  <div style="display: none;" id="nav_menu" class="itp-nav-menu">
+  <div class="mdui-dialog-title">导航</div>
+  <div class="mdui-row-xs-2 mdui-nav-list" style="padding-bottom: 10px;">
+    
+    <a class="mdui-list-item mdui-ripple mdui-col" href="/">
+      <i class="mdui-list-item-icon mdui-icon material-icons itp-drawer-icon">home</i>
+      <div class="mdui-list-item-content itp-header-actions-menu" style="font-size: 14px; color: #757575;">首页
+      </div>
+    </a>
+    
+    <a class="mdui-list-item mdui-ripple mdui-col" href="/archives/">
+      <i class="mdui-list-item-icon mdui-icon material-icons itp-drawer-icon">move_to_inbox</i>
+      <div class="mdui-list-item-content itp-header-actions-menu" style="font-size: 14px; color: #757575;">归档
+      </div>
+    </a>
+    
+    <a class="mdui-list-item mdui-ripple mdui-col" href="/about.html">
+      <i class="mdui-list-item-icon mdui-icon material-icons itp-drawer-icon">person</i>
+      <div class="mdui-list-item-content itp-header-actions-menu" style="font-size: 14px; color: #757575;">关于
+      </div>
+    </a>
+    
+    <a class="mdui-list-item mdui-ripple mdui-col" href="/links.html">
+      <i class="mdui-list-item-icon mdui-icon material-icons itp-drawer-icon">link</i>
+      <div class="mdui-list-item-content itp-header-actions-menu" style="font-size: 14px; color: #757575;">友链
+      </div>
+    </a>
+    
+  </div>
+</div>
+<header id="header" class="itp-header noprn">
+  <div id="appbar-index" class="mdui-appbar mdui-appbar-fixed itp-appbar_index mdui-shadow-0">
+    <div id="toolbar-index" class="mdui-toolbar mdui-shadow-0" style="justify-content: center;">
+      <a class="mdui-btn mdui-btn-icon itp-drawer-btn itp-header-actions_menu" style="color: #fff" data-fancybox data-src="#nav_menu" href="javascript:;"><i
+          class="mdui-icon material-icons">menu</i></a>
+      <a href="/" class="itp-header-title mdui-typo-title">Java 源码</a>
+      <div class="itp-nav-action">
+        
+        <a href="/" class="mdui-btn itp-header-actions" style="color: #fff">首页</a>
+        
+        <a href="/archives/" class="mdui-btn itp-header-actions" style="color: #fff">归档</a>
+        
+        <a href="/about.html" class="mdui-btn itp-header-actions" style="color: #fff">关于</a>
+        
+        <a href="/links.html" class="mdui-btn itp-header-actions" style="color: #fff">友链</a>
+        
+      </div>
+      <div class="itp-nav-action">
+        
+        <a href="/search.html" class="mdui-btn mdui-btn-icon itp-header-search-btn"><i class="mdui-icon material-icons"
+            style="line-height: 20px;">search</i></a>
+        
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Cover -->
+  <div class="itp-cover noprn">
+  <div class="itp-cover-img">
+    
+    <img class="nofancy" src="https://imgur.lzmun.com/picgo/20200504100314.jpg">
+    
+  </div>
+  <div class="itp-cover-text">
+    <div class="itp-cover-title mdui-text-center"
+      style="color: #fff; opacity: 1;">
+      Java 源码</div>
+    <div class="itp-cover-subtitle mdui-text-center"
+      style="color: #fff; opacity: 0.8;">
+      
+高质量项目源码分享
+</div>
+  </div>
+</div>
+<div class="itp-cover noscreen">
+  <div class="itp-cover-img">
+    
+    <img class="nofancy nodisplay" src="https://imgur.lzmun.com/picgo/20200504100314.jpg">
+    
+  </div>
+  <div class="itp-cover-text">
+    <div class="itp-cover-title mdui-text-center"
+      style="color: #000; opacity: 1;">
+      Java 源码</div>
+    <div class="itp-cover-subtitle mdui-text-center"
+      style="color: #000 !important; opacity: 0.8;">
+      
+高质量项目源码分享
+</div>
+  </div>
+</div>
+  <!-- Main Content -->
+  <div class="mdui-container-fluid">
+  <div class="mdui-row">
+    <div class="mdui-col-lg-3 mdui-col-md-2 mdui-col-sm-1 mdui-col-xs-down"></div>
+    <div class="mdui-col-lg-6 mdui-col-md-8 mdui-col-sm-10 mdui-col-xs-12">
+      <!--<div class="itp-index-notice mdui-text-center">
+        向那些永远停留在这个冬天里的人致哀
+      </div>-->
+      <div class="itp-index">
+        
+        <section id="index-post-entry">
+          <div class="mduimdui-card-primary itp-index-content">
+            
+            
+            
+<div class="itp-post-entry mdui-card mdui-shadow-0">
+  
+  <a href="/source/Subject One Notes/">
+    
+    <div class="mdui-card-media itp-post-entry-cover"
+      style="background-image: url('/../img/random/randompic-19.png');">
+    </div>
+    
+  </a>
+  <div class="mdui-card-primary">
+    <div class="mdui-card-primary-title itp-post-entry-title"><a
+        href="/source/Subject One Notes/">科目一笔记</a>
+    </div>
+    <div class="itp-post-entry-subtitle">
+      2020-07-25<span> / </span>
+      
+      890
+    </div>
+    <div class="itp-post-entry-excerpt">
+      <a href="/source/Subject One Notes/">
+        限速
+没有道路中心线的：城市道路最高时速 30km; ...
+        
+      </a>
+    </div>
+  </div>
+  
+</div>
+            
+            
+            
+            
+<div class="itp-post-entry mdui-card mdui-shadow-0">
+  
+  <div class="mdui-card-primary">
+    <div class="itp-post-entry-subtitle" style="padding: 0px 0 16px 0 !important">
+      2020-07-09
+    </div>
+    <div class="mdui-card-primary-title itp-post-entry-moment">
+      <p>写作课考试<br>写了一篇《格格不入》的同人文<br>在作死的边缘疯狂试探</p>
+
+    </div>
+  </div>
+  
+</div>
+            
+            
+            
+            
+<div class="itp-post-entry mdui-card mdui-shadow-0">
+  
+  <div class="mdui-card-primary">
+    <div class="itp-post-entry-subtitle" style="padding: 0px 0 16px 0 !important">
+      2020-06-26
+    </div>
+    <div class="mdui-card-primary-title itp-post-entry-moment">
+      <p>当初以为我大学学法学或者工商管理<br>不需要多高性能的电脑<br>就买了办公本</p>
+<p>结果最后选了文管我发现我还是修图和剪视频做的多<br>每天都在这台低压本上修图<br>感觉手都在铁板烧了</p>
+
+    </div>
+  </div>
+  
+</div>
+            
+            
+            
+            
+<div class="itp-post-entry mdui-card mdui-shadow-0">
+  
+  <a href="/source/for-20s/">
+    
+    <div class="mdui-card-media itp-post-entry-cover"
+      style="background-image: url('/../img/random/randompic-6.png');">
+    </div>
+    
+  </a>
+  <div class="mdui-card-primary">
+    <div class="mdui-card-primary-title itp-post-entry-title"><a
+        href="/source/for-20s/">陌上人如玉 公子世无双</a>
+    </div>
+    <div class="itp-post-entry-subtitle">
+      2020-05-11<span> / </span>
+      
+      <a class="itp-post-entry-categories" href="/categories/读立写生/" rel="tag">
+        读立写生
+      </a>
+      <span> / </span>
+      
+      1.2k
+    </div>
+    <div class="itp-post-entry-excerpt">
+      <a href="/source/for-20s/">
+        陌上人如玉 公子世无双
+        
+      </a>
+    </div>
+  </div>
+  
+</div>
+            
+            
+            
+            
+<div class="itp-post-entry mdui-card mdui-shadow-0">
+  
+  <a href="/source/Research on the Development of Liuzhou Industrial Cultural Resources/">
+    
+    <div class="mdui-card-media itp-post-entry-cover"
+      style="background-image: url('/../img/random/randompic-10.png');">
+    </div>
+    
+  </a>
+  <div class="mdui-card-primary">
+    <div class="mdui-card-primary-title itp-post-entry-title"><a
+        href="/source/Research on the Development of Liuzhou Industrial Cultural Resources/">柳州工业文化资源开发研究</a>
+    </div>
+    <div class="itp-post-entry-subtitle">
+      2020-05-08<span> / </span>
+      
+      2.2k
+    </div>
+    <div class="itp-post-entry-excerpt">
+      <a href="/source/Research on the Development of Liuzhou Industrial Cultural Resources/">
+        [toc]
+引言柳州是中国西南最著名的工业城市之一。拥有 “柳工” 牌装载机、“上汽...
+        
+      </a>
+    </div>
+  </div>
+  
+</div>
+            
+            
+            
+            
+<div class="itp-post-entry mdui-card mdui-shadow-0">
+  
+  <a href="/source/Cultural-Resources-Chapter-Two-Lecture-Notes/">
+    
+    <div class="mdui-card-media itp-post-entry-cover"
+      style="background-image: url('/../img/random/randompic-9.png');">
+    </div>
+    
+  </a>
+  <div class="mdui-card-primary">
+    <div class="mdui-card-primary-title itp-post-entry-title"><a
+        href="/source/Cultural-Resources-Chapter-Two-Lecture-Notes/">文化资源学讲义 第二章 文化资源要素及价值</a>
+    </div>
+    <div class="itp-post-entry-subtitle">
+      2020-05-04<span> / </span>
+      
+      <a class="itp-post-entry-categories" href="/categories/笔记/" rel="tag">
+        笔记
+      </a>
+      <span> / </span>
+      
+      8.4k
+    </div>
+    <div class="itp-post-entry-excerpt">
+      <a href="/source/Cultural-Resources-Chapter-Two-Lecture-Notes/">
+        第一节 文化资源的要素
+        
+      </a>
+    </div>
+  </div>
+  
+</div>
+            
+            
+            
+            
+<div class="itp-post-entry mdui-card mdui-shadow-0">
+  
+  <div class="mdui-card-primary">
+    <div class="itp-post-entry-subtitle" style="padding: 0px 0 16px 0 !important">
+      2020-05-02
+    </div>
+    <div class="mdui-card-primary-title itp-post-entry-moment">
+      <p>劳动节近期热搜：<br>劳动者拒绝加班倒赔企业<br>创作者作品版权归资本所有（阅文）<br>艺术作品无价＝价值为零<br>资本想让你看什么什么就是正确的（光点）</p>
+<hr>
+<p>不做无产者的叛徒<br>不做资本家的走狗</p>
+
+    </div>
+  </div>
+  
+</div>
+            
+            
+            
+            
+<div class="itp-post-entry mdui-card mdui-shadow-0">
+  
+  <a href="/source/Cultural-Resources-Chapter-One-Lecture-Notes/">
+    
+    <div class="mdui-card-media itp-post-entry-cover"
+      style="background-image: url('/../img/random/randompic-5.png');">
+    </div>
+    
+  </a>
+  <div class="mdui-card-primary">
+    <div class="mdui-card-primary-title itp-post-entry-title"><a
+        href="/source/Cultural-Resources-Chapter-One-Lecture-Notes/">文化资源学讲义 第一章 文化资源概述</a>
+    </div>
+    <div class="itp-post-entry-subtitle">
+      2020-04-30<span> / </span>
+      
+      <a class="itp-post-entry-categories" href="/categories/笔记/" rel="tag">
+        笔记
+      </a>
+      <span> / </span>
+      
+      19k
+    </div>
+    <div class="itp-post-entry-excerpt">
+      <a href="/source/Cultural-Resources-Chapter-One-Lecture-Notes/">
+        
+本内容来源于中国大学 MOOC，仅供学习使用。
+
+
+        
+      </a>
+    </div>
+  </div>
+  
+</div>
+            
+            
+            
+            
+<div class="itp-post-entry mdui-card mdui-shadow-0">
+  
+  <a href="/source/SELP1650/">
+    
+    <div class="mdui-card-media itp-post-entry-cover" style="background-image: url('https://imgur.lzmun.com/picgo/20200429153904.jpg');">
+    </div>
+    
+  </a>
+  <div class="mdui-card-primary">
+    <div class="mdui-card-primary-title itp-post-entry-title"><a
+        href="/source/SELP1650/">谈谈 SELP1650</a>
+    </div>
+    <div class="itp-post-entry-subtitle">
+      2020-04-30<span> / </span>
+      
+      <a class="itp-post-entry-categories" href="/categories/拔草日记/" rel="tag">
+        拔草日记
+      </a>
+      <span> / </span>
+      
+      1.2k
+    </div>
+    <div class="itp-post-entry-excerpt">
+      <a href="/source/SELP1650/">
+        SELP1650 这颗镜头，对于索尼半画幅微单的用户而言应该算是「统一分配的人手一颗系列」，标准焦段、电动变焦、光学防抖、全新 600 二手 300 的价格，要啥自行车。
+
+        
+      </a>
+    </div>
+  </div>
+  
+</div>
+            
+            
+            
+            
+<div class="itp-post-entry mdui-card mdui-shadow-0">
+  
+  <a href="/source/get-sel18135/">
+    
+    <div class="mdui-card-media itp-post-entry-cover" style="background-image: url('https://imgur.lzmun.com/picgo/20200423220428.jpg');">
+    </div>
+    
+  </a>
+  <div class="mdui-card-primary">
+    <div class="mdui-card-primary-title itp-post-entry-title"><a
+        href="/source/get-sel18135/">入了 SEL18135 镜头</a>
+    </div>
+    <div class="itp-post-entry-subtitle">
+      2020-04-22<span> / </span>
+      
+      <a class="itp-post-entry-categories" href="/categories/拔草日记/" rel="tag">
+        拔草日记
+      </a>
+      <span> / </span>
+      
+      37
+    </div>
+    <div class="itp-post-entry-excerpt">
+      <a href="/source/get-sel18135/">
+        心心念念好久的SEL18135这颗镜头终于拔草了，下午马上拿出去转了一圈。
+
+
+
+        
+      </a>
+    </div>
+  </div>
+  
+</div>
+            
+            
+            
+            
+<div class="itp-post-entry mdui-card mdui-shadow-0">
+  
+  <a href="/source/娱乐至死/">
+    
+    <div class="mdui-card-media itp-post-entry-cover"
+      style="background-image: url('/../img/random/randompic-2.png');">
+    </div>
+    
+  </a>
+  <div class="mdui-card-primary">
+    <div class="mdui-card-primary-title itp-post-entry-title"><a
+        href="/source/娱乐至死/">娱乐至死</a>
+    </div>
+    <div class="itp-post-entry-subtitle">
+      2020-04-18<span> / </span>
+      
+      <a class="itp-post-entry-categories" href="/categories/随笔/" rel="tag">
+        随笔
+      </a>
+      <span> / </span>
+      
+      1.1k
+    </div>
+    <div class="itp-post-entry-excerpt">
+      <a href="/source/娱乐至死/">
+        我是一个 450205 的柳州人。
+今天（2020 年 4 月 18 日）一条热搜在微博挂了一个上午。
+
+        
+      </a>
+    </div>
+  </div>
+  
+</div>
+            
+            
+            
+            
+<div class="itp-post-entry mdui-card mdui-shadow-0">
+  
+  <a href="/source/uptown2020/">
+    
+    <div class="mdui-card-media itp-post-entry-cover" style="background-image: url('https://imgur.lzmun.com/picgo/20200202164838.jpg_/fh/1280');">
+    </div>
+    
+  </a>
+  <div class="mdui-card-primary">
+    <div class="mdui-card-primary-title itp-post-entry-title"><a
+        href="/source/uptown2020/">百益上河城系列</a>
+    </div>
+    <div class="itp-post-entry-subtitle">
+      2020-03-08<span> / </span>
+      
+      <a class="itp-post-entry-categories" href="/categories/摄影/" rel="tag">
+        摄影
+      </a>
+      <span> / </span>
+      
+      31
+    </div>
+    <div class="itp-post-entry-excerpt">
+      <a href="/source/uptown2020/">
+        上个学期去了好几次百益上河城，每一次都能拍到很多有趣的东西。
+        
+      </a>
+    </div>
+  </div>
+  
+</div>
+            
+            
+            
+            
+<div class="itp-post-entry mdui-card mdui-shadow-0">
+  
+  <a href="/source/for-next-29th-feb/">
+    
+    <div class="mdui-card-media itp-post-entry-cover"
+      style="background-image: url('/../img/random/randompic-8.png');">
+    </div>
+    
+  </a>
+  <div class="mdui-card-primary">
+    <div class="mdui-card-primary-title itp-post-entry-title"><a
+        href="/source/for-next-29th-feb/">写给下一个 0229</a>
+    </div>
+    <div class="itp-post-entry-subtitle">
+      2020-02-29<span> / </span>
+      
+      <a class="itp-post-entry-categories" href="/categories/随笔/" rel="tag">
+        随笔
+      </a>
+      <span> / </span>
+      
+      877
+    </div>
+    <div class="itp-post-entry-excerpt">
+      <a href="/source/for-next-29th-feb/">
+        上一个 2 月 29 日，我是谁，我在哪。这些事已经找不到原来的记忆了。今天在这里写下这些东西，是希望自己不要被时间所抹去记忆，抹去在乎的一些事情。
+明天是开学的日子，按原计划来说的话，我大概提前一个星期就会回到学...
+        
+      </a>
+    </div>
+  </div>
+  
+</div>
+            
+            
+            
+            
+<div class="itp-post-entry mdui-card mdui-shadow-0">
+  
+  <div class="mdui-card-primary">
+    <div class="itp-post-entry-subtitle" style="padding: 0px 0 16px 0 !important">
+      2020-02-08
+    </div>
+    <div class="mdui-card-primary-title itp-post-entry-moment">
+      我们比任何时候都更需要爱与希望
+    </div>
+  </div>
+  
+</div>
+            
+            
+            
+            
+<div class="itp-post-entry mdui-card mdui-shadow-0">
+  
+  <a href="/source/summary-of-photograph-in-2019/">
+    
+    <div class="mdui-card-media itp-post-entry-cover" style="background-image: url('https://imgur.lzmun.com/picgo/20200201164033.jpg_/fw/1280');">
+    </div>
+    
+  </a>
+  <div class="mdui-card-primary">
+    <div class="mdui-card-primary-title itp-post-entry-title"><a
+        href="/source/summary-of-photograph-in-2019/">2019 关于摄影的总结和思考</a>
+    </div>
+    <div class="itp-post-entry-subtitle">
+      2020-02-04<span> / </span>
+      
+      <a class="itp-post-entry-categories" href="/categories/读立写生/" rel="tag">
+        读立写生
+      </a>
+      <span> / </span>
+      
+      2.8k
+    </div>
+    <div class="itp-post-entry-excerpt">
+      <a href="/source/summary-of-photograph-in-2019/">
+        摄影是一种记录的手段，一种表达的渠道，一种对美好的追求，更是一个寻找的过程。对摄影的热爱不在于追求能学到什么实实在在的知识，不在于渴望能得到什么样的荣誉，只是因为摄影本身的这个过程，就已经足够有趣。
+        
+      </a>
+    </div>
+  </div>
+  
+</div>
+            
+            
+            <div class="index-pagination">
+              
+              
+              <a href="/page/2/" class="index-pagination-btn">下一页</a>
+              
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="mdui-col-lg-3 mdui-col-md-2 mdui-col-sm-1 mdui-col-xs-down"></div>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <!-- Footer -->
+<footer class="mdui-text-center itp-footer">
+  <section class="footer-info">
+    Java 源码 &copy; 2016 - 2020
+    
+    <span> / </span>
+    88k
+    
+    
+    
+  </section>
+  
+  </section>
+</footer>
+  <!-- After footer scripts -->
+  <!-- fancybox -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script src="/js/mdui.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+  $("code").each(function () {
+    $(this).html("<ol><li>" + $(this).html().replace(/\n/g, "\n</li><li>") + "\n</li></ol>");
+  });
+</script>
+
+
+
+<script src="/js/app.js"></script>
+
+</body>
+
+
+</html>

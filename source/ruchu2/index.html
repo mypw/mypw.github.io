@@ -1,0 +1,463 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- Head tag -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!--360 使用 Google Chrome Frame-->
+  <meta name="renderer" content="webkit">
+  <!--百度禁止转码-->
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <!--Description-->
+  
+  <meta name="description" content="高质量项目源码分享">
+  
+  <meta name="google-site-verification" content="J4gssmXGNI9-DfJ9w52mL5KFPlRCYvySveEN0RJFZHU" />
+  <!--Author-->
+  
+  <meta name="author" content="Admin">
+  
+  <!--Open Graph Title-->
+  
+  <meta property="og:title" content="世界总在不断地新陈代谢" />
+  
+  <!--Open Graph Description-->
+  
+  <meta property="og:description" content="高质量项目源码分享" />
+  
+  <!--Open Graph Site Name-->
+  <meta property="og:site_name" content="Java 源码" />
+  <!--Type page-->
+  
+  <meta property="og:type" content="article" />
+  
+  <!--Page Cover-->
+  
+  <meta property="og:image" content="https://itypen.app" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Title -->
+  
+  <title>世界总在不断地新陈代谢 - Java 源码</title>
+  <!-- 添加到主屏后的标题（iOS 6 新增） -->
+  <meta name="apple-mobile-web-app-title" content="Java 源码">
+  <!-- 是否启用 WebApp 全屏模式 -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!-- 禁止数字识自动别为电话号码 -->
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/yuanjianchen/yuanjianchen.github.io/medias/logo/avatar.png">
+  <!--Apple iOS Safari ICON-->
+  <link rel="apple-touch-icon" sizes="57x57" href="https://cdn.jsdelivr.net/gh/yuanjianchen/yuanjianchen.github.io/medias/logo/avatar.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="https://cdn.jsdelivr.net/gh/yuanjianchen/yuanjianchen.github.io/medias/logo/avatar.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="https://cdn.jsdelivr.net/gh/yuanjianchen/yuanjianchen.github.io/medias/logo/avatar.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="https://cdn.jsdelivr.net/gh/yuanjianchen/yuanjianchen.github.io/medias/logo/avatar.png" />
+  <!-- 添加 RSS 订阅 -->
+  <link rel="alternate" type="application/rss+xml" title="Java 源码" href="/atom.xml" />
+  <!-- uc强制竖屏 -->
+  <meta name="screen-orientation" content="portrait">
+  <!-- QQ强制竖屏 -->
+  <meta name="x5-orientation" content="portrait">
+  <!-- UC强制全屏 -->
+  <meta name="full-screen" content="yes">
+  <!-- QQ强制全屏 -->
+  <meta name="x5-fullscreen" content="true">
+  <!-- UC应用模式 -->
+  <meta name="browsermode" content="application">
+  <!-- QQ应用模式 -->
+  <meta name="x5-page-mode" content="app">
+  <!-- Custom CSS/Sass -->
+  
+<link rel="stylesheet" href="/css/mdui.min.css">
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  <!--highlight.js CSS-->
+  
+  
+<link rel="stylesheet" href="/css/highlight/tomorrow-night-eighties.css">
+
+  
+  
+  <!-- jquery -->
+  <script src="//cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <!-- PJAX -->
+  <script src="//cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
+  <script>
+  </script>
+  
+  <script data-pjax src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+  <script data-pjax src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  
+  
+  <!-- Google Analytics with Cloudflare Async -->
+  <script>
+    window.ga_tid = "UA-141010711-2"; // {String} The trackerID of your site.
+    window.ga_api = "https://async-google-analytics.disqusapi.workers.dev/"; // {String} The route of your cloudflare workers you just registered before.
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/cfga@1.0.1" async></script>
+  
+  
+  
+  
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <!-- Nav -->
+  <div style="display: none;" id="nav_menu" class="itp-nav-menu">
+  <div class="mdui-dialog-title">导航</div>
+  <div class="mdui-row-xs-2 mdui-nav-list" style="padding-bottom: 10px;">
+    
+    <a class="mdui-list-item mdui-ripple mdui-col" href="/">
+      <i class="mdui-list-item-icon mdui-icon material-icons itp-drawer-icon">home</i>
+      <div class="mdui-list-item-content itp-header-actions-menu" style="font-size: 14px; color: #757575;">首页
+      </div>
+    </a>
+    
+    <a class="mdui-list-item mdui-ripple mdui-col" href="/archives/">
+      <i class="mdui-list-item-icon mdui-icon material-icons itp-drawer-icon">move_to_inbox</i>
+      <div class="mdui-list-item-content itp-header-actions-menu" style="font-size: 14px; color: #757575;">归档
+      </div>
+    </a>
+    
+    <a class="mdui-list-item mdui-ripple mdui-col" href="/about.html">
+      <i class="mdui-list-item-icon mdui-icon material-icons itp-drawer-icon">person</i>
+      <div class="mdui-list-item-content itp-header-actions-menu" style="font-size: 14px; color: #757575;">关于
+      </div>
+    </a>
+    
+    <a class="mdui-list-item mdui-ripple mdui-col" href="/links.html">
+      <i class="mdui-list-item-icon mdui-icon material-icons itp-drawer-icon">link</i>
+      <div class="mdui-list-item-content itp-header-actions-menu" style="font-size: 14px; color: #757575;">友链
+      </div>
+    </a>
+    
+  </div>
+</div>
+<header id="header" class="itp-header noprn">
+  <div id="appbar-index" class="mdui-appbar mdui-appbar-fixed itp-appbar_index mdui-shadow-0">
+    <div id="toolbar-index" class="mdui-toolbar mdui-shadow-0" style="justify-content: center;">
+      <a class="mdui-btn mdui-btn-icon itp-drawer-btn itp-header-actions_menu" style="color: #fff" data-fancybox data-src="#nav_menu" href="javascript:;"><i
+          class="mdui-icon material-icons">menu</i></a>
+      <a href="/" class="itp-header-title mdui-typo-title">Java 源码</a>
+      <div class="itp-nav-action">
+        
+        <a href="/" class="mdui-btn itp-header-actions" style="color: #fff">首页</a>
+        
+        <a href="/archives/" class="mdui-btn itp-header-actions" style="color: #fff">归档</a>
+        
+        <a href="/about.html" class="mdui-btn itp-header-actions" style="color: #fff">关于</a>
+        
+        <a href="/links.html" class="mdui-btn itp-header-actions" style="color: #fff">友链</a>
+        
+      </div>
+      <div class="itp-nav-action">
+        
+        <a href="/search.html" class="mdui-btn mdui-btn-icon itp-header-search-btn"><i class="mdui-icon material-icons"
+            style="line-height: 20px;">search</i></a>
+        
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Cover -->
+  <div class="itp-cover noprn">
+  <div class="itp-cover-img">
+    
+    <img class="nofancy" src="https://imgur.lzmun.com/picgo/20190502204745.jpg_itp">
+    
+  </div>
+  <div class="itp-cover-text">
+    <div class="itp-cover-title mdui-text-center"
+      style="color: #fff; opacity: 1;">
+      世界总在不断地新陈代谢</div>
+    <div class="itp-cover-subtitle mdui-text-center"
+      style="color: #fff; opacity: 0.8;">
+      
+2019-05-05
+<span> / </span>
+
+<a class="category-link" href="/categories/%E8%AF%BB%E7%AB%8B%E5%86%99%E7%94%9F/">读立写生</a>
+
+
+<span> / </span>
+1.5k
+<style>
+  @media print {
+    .itp-cover-subtitle a {
+      color: #000 !important;
+    }
+  }
+
+  @media screen {
+    .itp-cover-subtitle a {
+      color: #fff !important;
+    }
+  }
+</style>
+</div>
+  </div>
+</div>
+<div class="itp-cover noscreen">
+  <div class="itp-cover-img">
+    
+    <img class="nofancy nodisplay" src="https://imgur.lzmun.com/picgo/20190502204745.jpg_itp">
+    
+  </div>
+  <div class="itp-cover-text">
+    <div class="itp-cover-title mdui-text-center"
+      style="color: #000; opacity: 1;">
+      世界总在不断地新陈代谢</div>
+    <div class="itp-cover-subtitle mdui-text-center"
+      style="color: #000 !important; opacity: 0.8;">
+      
+2019-05-05
+<span> / </span>
+
+<a class="category-link" href="/categories/%E8%AF%BB%E7%AB%8B%E5%86%99%E7%94%9F/">读立写生</a>
+
+
+<span> / </span>
+1.5k
+<style>
+  @media print {
+    .itp-cover-subtitle a {
+      color: #000 !important;
+    }
+  }
+
+  @media screen {
+    .itp-cover-subtitle a {
+      color: #fff !important;
+    }
+  }
+</style>
+</div>
+  </div>
+</div>
+  <!-- Main Content -->
+  
+<!--<progress id="content_progress" value="0"></progress>-->
+<div class="mdui-container">
+  <div class="content-area">
+    <div class="mdui-row">
+      <div class="mdui-col-md-2 mdui-col-xs-down"></div>
+      <div class="mdui-col-md-8 mdui-col-xs-12">
+        <div class="mdui-card itp-post-card">
+          <!--正文-->
+          <section class="mdui-card-content itp-post-content article" role="article">
+            <h2 id="卷首语-世界总在不断地新陈代谢"><a href="#卷首语-世界总在不断地新陈代谢" class="headerlink" title="卷首语 世界总在不断地新陈代谢"></a>卷首语 世界总在不断地新陈代谢</h2><p>新陈代谢，本来应该是一个针对生物的说法，至少，是针对人的说法。但能新陈代谢的不止是生命，更不止是人。至少我觉得，世间万物都有新陈代谢的能力。并且，世界作为一个整体，也有新陈代谢的能力。</p>
+<p>古人云，长江后浪退前浪。时间流逝，科技发展，人才成长，知识更新。新生事物总能迅速而强有力地将陈旧的东西挤下历史的舞台，没有什么人可以自以为引领了时代，因为你终将成为陈旧的，被嫌弃的，被抛弃的。也许你上一秒还是意见的主导者，下一秒却成为了时代的糟粕。</p>
+<p>世界在不断地新陈代谢，所以，我们要敬畏一切的未知，谁也不知道下一个新出现的事物，是否会把自己取而代之，是否会革了自己的命。就像共享单车的出现不过短短两年，从万众瞩目的 “共享经济新模范”，到被万人唾弃的 “骗押金”，“伪共享”，弹指一挥间，便从神坛跌落至地狱。</p>
+<p><img src="https://imgur.lzmun.com/picgo/20190502205200.jpg" alt="被遗弃的共享单车"></p>
+<p>风口站对了，猪都能飞起来，然而风停后，摔得最惨的也是猪。</p>
+<p>我们又何尝不是风口上的猪呢？</p>
+<h2 id="你拥有的什么东西再过-20-年就会被淘汰？"><a href="#你拥有的什么东西再过-20-年就会被淘汰？" class="headerlink" title="你拥有的什么东西再过 20 年就会被淘汰？"></a>你拥有的什么东西再过 20 年就会被淘汰？</h2><h3 id="少年意气"><a href="#少年意气" class="headerlink" title="少年意气"></a>少年意气</h3><p>其实不用 20 年，我们在现在就已经开始逐渐独立面对生活的种种曲折和不顺。我们要开始谋划自己的收入，开始处理一些学校里的人际关系，开始学习如何平衡工作与生活等等。直到当我们的父母开始老去，我们就一点安逸都不能剩下，不再有“欲买桂花同载酒”的少年意气，不再有“书生意气挥斥方遒”的无拘无束，20 年后，那个为了生活奔波的人啊，是否也会发出“终不似，少年游”的感叹呢？</p>
+<h2 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h2><h3 id="教室里的摄像头"><a href="#教室里的摄像头" class="headerlink" title="教室里的摄像头"></a>教室里的摄像头</h3><p>📌<a href="http://www.sixthtone.com/news/1003759/camera-above-the-classroom#" target="_blank" rel="noopener">Camera Above the Classroom 教室上方的摄像头 - SIXTH TONE</a></p>
+<p><img src="https://imgur.lzmun.com/picgo/20190426221317.jpg" alt=""></p>
+<blockquote>
+<p>Hu refers to the panopticon, a circular prison discussed by French philosopher Michel Foucault in his book “Discipline and Punish,” in which inmates are observed by a single watchman but cannot tell if and when they are being watched, forcing them to act as if they are always being watched. To Hu, using systems like CCS will have the same impact, encouraging students to simply act like they’re behaving.</p>
+</blockquote>
+<blockquote>
+<p>胡指的是法国哲学家米歇尔·福柯（Michel Foucault）在他的 “纪律与惩罚”（Discipline and Punish）一书中讨论的圆形监狱，其中囚犯由一名守望者观察，但不知道他们是否以及何时被监视，迫使他们表现得好像他们总是受到关注。对于胡，使用像 CCS 这样的系统会产生同样的影响，鼓励学生只是表现得像他们的行为。</p>
+</blockquote>
+<p>📌<a href="http://www.sohu.com/a/232757224_658673" target="_blank" rel="noopener">被教室天眼扫描的中学生：得高分要“表情丰富挺直腰”</a> </p>
+<blockquote>
+<p>我在饭里吃到过头发，算了，因为做饭的师傅有头发；我在豆腐汤里喝到过塑料袋，也算了，因为包豆腐有塑料袋；但炒粉丝味道像炒塑料皮，糖醋里脊没有里脊是怎么回事，我一直想知道。</p>
+</blockquote>
+<h3 id="文摘"><a href="#文摘" class="headerlink" title="文摘"></a>文摘</h3><p>📌<a href="https://mp.weixin.qq.com/s?__biz=MzU5MTUyODE3MQ==&mid=2247486826&idx=2&sn=874a3c7caffd8ea51362522fba438f09&chksm=fe2ce4eec95b6df84164c5c751884160f6d987425cc80cb42ac3b9b55fce3335684f2ab2fef5&mpshare=1&scene=23&srcid=#rd" target="_blank" rel="noopener">你有没有想过去试试做一些不敢想的事情</a></p>
+<blockquote>
+<p>好奇心，想象力，积极性，都是督促人们前进的源动力。</p>
+</blockquote>
+<p>📌<a href="https://www.huxiu.com/article/296999.html" target="_blank" rel="noopener">腰封妖风 - 新周刊</a></p>
+<blockquote>
+<p>法国瑟伊出版社编辑安妮 · 弗朗索瓦在《书带》一文总写道：“书带就横在那儿，不合时宜却一意孤行。”从正反两面理解这句话，都能看出腰封的反常与强势——因此，腰封可能是点睛妙笔，也可能是商业时代绵延不绝的恼人妖风。</p>
+</blockquote>
+<h2 id="卷尾语"><a href="#卷尾语" class="headerlink" title="卷尾语"></a>卷尾语</h2><p>达成成就：连载一次</p>
+<p>这期更新感觉比上一次水了很多，可能是因为劳动节的时候我并没有在劳动吧😝。今年劳动节难得地有四天假期，也难得地在快要生活了一年的邕城好好浪一下。</p>
+<p>我们下期再会~</p>
+<hr>
+<p>文 / aiokr Deemo</p>
+<p>校对 / Deemo</p>
+<p>配图 / aiokr</p>
+
+          </section>
+          <!--文章底部信息-->
+          <section class="mdui-card-content itp-post-content">
+            <div class="mdui-text-center">
+              <div class="itp-post-subtitle">
+                2019-05-05
+                
+                <span> / </span>
+                <a class="category-link" href="/categories/%E8%AF%BB%E7%AB%8B%E5%86%99%E7%94%9F/">读立写生</a>
+                
+                <span> / </span>
+                1.5k
+              </div>
+            </div>
+            
+            <div class="mdui-text-center" style="padding-top: 2px; font-size: .75rem !important;">
+              <div class="tags-links">
+                
+                <div class="mdui-chip">
+                  <a class="mdui-chip-title" href="/tags/随笔/" rel="tag">
+                    随笔
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+            
+          </section>
+          <section class="mdui-card-content itp-page-select">
+            <!--文章页页面选择器-->
+<div class="pagination noprn">
+  <div class="mdui-col-xs-6">
+    
+    <div class="itp-page-select-prev">
+      <a class="mdui-btn mdui-btn-icon" href="/source/ruchu3/"><i
+          class="mdui-icon material-icons">arrow_back</i></a>
+      <a class="mdui-chip-title" rel="prev" href="/source/ruchu3/">上一页</a>
+    </div>
+    
+  </div>
+  <div class="mdui-col-xs-6">
+    
+    <div class="itp-page-select-next  mdui-float-right">
+      <a class="mdui-chip-title" rel="next" href="/source/ruchu1/">下一页</a>
+      <a class="mdui-btn mdui-btn-icon" href="/source/ruchu1/"><i
+          class="mdui-icon material-icons">arrow_forward</i></a>
+    </div>
+    
+  </div>
+</div>
+          </section>
+          <section class="itp-post-comment noprn">
+            <!--评论-->
+
+<!--valine-->
+<div id="vcomments"></div>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '0kSi0u9r40XN3MswJG34Sj6K-gzGzoHsz',
+    appKey: '0etVoCn0nhOS5RSYOenq0sl6',
+    path: window.location.pathname,
+    avatar: 'identicon',
+    notify: true,
+    verify: true,
+    emojiCDN: '//i0.hdslb.com/bfs/emote/',
+    emojiMaps: {
+      "tv_白眼": "c1d59f439e379ee50eef488bcb5e5378e5044ea4.png",
+      "tv_doge": "6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png",
+      "tv_坏笑": "1f0b87f731a671079842116e0991c91c2c88645a.png",
+      "tv_难过": "87f46748d3f142ebc6586ff58860d0e2fc8263ba.png",
+      "tv_生气": "26702dcafdab5e8225b43ffd23c94ac1ff932654.png",
+      "tv_委屈": "d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png",
+      "tv_斜眼笑": "911f987aa8bc1bee12d52aafe62bc41ef4474e6c.png",
+      "tv_呆": "fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png",
+      "tv_发怒": "34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png",
+      "tv_惊吓": "0d15c7e2ee58e935adc6a7193ee042388adc22af.png",
+      "tv_呕吐": "9f996894a39e282ccf5e66856af49483f81870f3.png",
+      "tv_思考": "90cf159733e558137ed20aa04d09964436f618a1.png",
+      "tv_微笑": "70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png",
+      "tv_疑问": "0793d949b18d7be716078349c202c15ff166f314.png",
+      "tv_大哭": "23269aeb35f99daee28dda129676f6e9ea87934f.png",
+      "tv_鼓掌": "1d21793f96ef4e6f48b23e53e3b9e42da833a0f6.png",
+      "tv_抠鼻": "c666f55e88d471e51bbd9fab9bb308110824a6eb.png",
+      "tv_亲亲": "a8111ad55953ef5e3be3327ef94eb4a39d535d06.png",
+      "tv_调皮": "b9c41de8e82dd7a8515ae5e3cb63e898bf245186.png",
+      "tv_笑哭": "1abc628f6d4f4caf9d0e7800878f4697abbc8273.png",
+      "tv_晕": "5443c22b4d07fb1907ccc610c8e6db254f2461b7.png",
+      "tv_点赞": "f85c354995bd99e28fc76c869bfe42ba6438eff4.png",
+      "tv_害羞": "a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png",
+      "tv_色": "61822c7e9aae5da76475e7892534545336b23a6f.png",
+      "tv_吐血": "09dd16a7aa59b77baa1155d47484409624470c77.png",
+      "tv_无奈": "ea8ed89ee9878f2fece2dda0ea8a5dbfe21b5751.png",
+      "tv_再见": "180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png",
+      "tv_流汗": "cead1c351ab8d79e9f369605beb90148db0fbed3.png",
+      "tv_偷笑": "bb690d4107620f1c15cff29509db529a73aee261.png",
+      "tv_抓狂": "fe31c08edad661d63762b04e17b8d5ae3c71a757.png",
+      "tv_黑人问号": "45821a01f51bc867da9edbaa2e070410819a95b2.png",
+      "tv_困": "241ee304e44c0af029adceb294399391e4737ef2.png",
+      "tv_打脸": "56ab10b624063e966bfcb76ea5dc4794d87dfd47.png",
+      "tv_闭嘴": "c9e990da7f6e93975e25fd8b70e2e290aa4086ef.png",
+      "tv_鄙视": "6e72339f346a692a495b123174b49e4e8e781303.png",
+      "tv_腼腆": "89712c0d4af73e67f89e35cbc518420380a7f6f4.png",
+      "tv_馋": "fc7e829b845c43c623c8b490ee3602b7f0e76a31.png",
+      "tv_可爱": "9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png",
+      "tv_发财": "34db290afd2963723c6eb3c4560667db7253a21a.png",
+      "tv_生病": "8b0ec90e6b86771092a498c54f09fc94621c1900.png",
+      "tv_流鼻血": "c32d39db2737f89b904ca32700d140a9241b0767.png",
+      "tv_尴尬": "7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png",
+      "tv_大佬": "093c1e2c490161aca397afc45573c877cdead616.png",
+      "tv_流泪": "7e71cde7858f0cd50d74b0264aa26db612a8a167.png",
+      "tv_冷漠": "b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png",
+      "tv_皱眉": "72ccad6679fea0d14cce648b4d818e09b8ffea2d.png",
+      "tv_鬼脸": "0ffbbddf8a94d124ca2f54b360bbc04feb6bbfea.png",
+      "tv_调侃": "4bc022533ef31544ca0d72c12c808cf4a1cce3e3.png",
+      "tv_目瞪口呆": "0b8cb81a68de5d5365212c99375e7ace3e7891b7.png",
+    }
+  })
+</script>
+
+          </section>
+        </div>
+      </div>
+      <div class="mdui-col-md-2 mdui-col-xs-down">
+        <!--
+
+<div id="toc" class="noprn nodisplay">
+  <ol class="itp-toc"><li class="itp-toc-item itp-toc-level-2"><a class="itp-toc-link" href="#卷首语-世界总在不断地新陈代谢"><span class="itp-toc-text">卷首语 世界总在不断地新陈代谢</span></a></li><li class="itp-toc-item itp-toc-level-2"><a class="itp-toc-link" href="#你拥有的什么东西再过-20-年就会被淘汰？"><span class="itp-toc-text">你拥有的什么东西再过 20 年就会被淘汰？</span></a><ol class="itp-toc-child"><li class="itp-toc-item itp-toc-level-3"><a class="itp-toc-link" href="#少年意气"><span class="itp-toc-text">少年意气</span></a></li></ol></li><li class="itp-toc-item itp-toc-level-2"><a class="itp-toc-link" href="#笔记"><span class="itp-toc-text">笔记</span></a><ol class="itp-toc-child"><li class="itp-toc-item itp-toc-level-3"><a class="itp-toc-link" href="#教室里的摄像头"><span class="itp-toc-text">教室里的摄像头</span></a></li><li class="itp-toc-item itp-toc-level-3"><a class="itp-toc-link" href="#文摘"><span class="itp-toc-text">文摘</span></a></li></ol></li><li class="itp-toc-item itp-toc-level-2"><a class="itp-toc-link" href="#卷尾语"><span class="itp-toc-text">卷尾语</span></a></li></ol>
+</div>
+-->
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <!-- Footer -->
+<footer class="mdui-text-center itp-footer">
+  <section class="footer-info">
+    Java 源码 &copy; 2016 - 2020
+    
+    <span> / </span>
+    88k
+    
+    
+    
+  </section>
+  
+  </section>
+</footer>
+  <!-- After footer scripts -->
+  <!-- fancybox -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script src="/js/mdui.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+  $("code").each(function () {
+    $(this).html("<ol><li>" + $(this).html().replace(/\n/g, "\n</li><li>") + "\n</li></ol>");
+  });
+</script>
+
+
+
+<script src="/js/app.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,410 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- Head tag -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!--360 使用 Google Chrome Frame-->
+  <meta name="renderer" content="webkit">
+  <!--百度禁止转码-->
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <!--Description-->
+  
+  <meta name="description" content="高质量项目源码分享">
+  
+  <meta name="google-site-verification" content="J4gssmXGNI9-DfJ9w52mL5KFPlRCYvySveEN0RJFZHU" />
+  <!--Author-->
+  
+  <meta name="author" content="Admin">
+  
+  <!--Open Graph Title-->
+  
+  <meta property="og:title" content="既然总想着怎么用动态博客的方法管理 Hexo 的博客文章，为什么不直接换 Typecho 呢" />
+  
+  <!--Open Graph Description-->
+  
+  <meta property="og:description" content="高质量项目源码分享" />
+  
+  <!--Open Graph Site Name-->
+  <meta property="og:site_name" content="Java 源码" />
+  <!--Type page-->
+  
+  <meta property="og:type" content="article" />
+  
+  <!--Page Cover-->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Title -->
+  
+  <title>既然总想着怎么用动态博客的方法管理 Hexo 的博客文章，为什么不直接换 Typecho 呢 - Java 源码</title>
+  <!-- 添加到主屏后的标题（iOS 6 新增） -->
+  <meta name="apple-mobile-web-app-title" content="Java 源码">
+  <!-- 是否启用 WebApp 全屏模式 -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!-- 禁止数字识自动别为电话号码 -->
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/yuanjianchen/yuanjianchen.github.io/medias/logo/avatar.png">
+  <!--Apple iOS Safari ICON-->
+  <link rel="apple-touch-icon" sizes="57x57" href="https://cdn.jsdelivr.net/gh/yuanjianchen/yuanjianchen.github.io/medias/logo/avatar.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="https://cdn.jsdelivr.net/gh/yuanjianchen/yuanjianchen.github.io/medias/logo/avatar.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="https://cdn.jsdelivr.net/gh/yuanjianchen/yuanjianchen.github.io/medias/logo/avatar.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="https://cdn.jsdelivr.net/gh/yuanjianchen/yuanjianchen.github.io/medias/logo/avatar.png" />
+  <!-- 添加 RSS 订阅 -->
+  <link rel="alternate" type="application/rss+xml" title="Java 源码" href="/atom.xml" />
+  <!-- uc强制竖屏 -->
+  <meta name="screen-orientation" content="portrait">
+  <!-- QQ强制竖屏 -->
+  <meta name="x5-orientation" content="portrait">
+  <!-- UC强制全屏 -->
+  <meta name="full-screen" content="yes">
+  <!-- QQ强制全屏 -->
+  <meta name="x5-fullscreen" content="true">
+  <!-- UC应用模式 -->
+  <meta name="browsermode" content="application">
+  <!-- QQ应用模式 -->
+  <meta name="x5-page-mode" content="app">
+  <!-- Custom CSS/Sass -->
+  
+<link rel="stylesheet" href="/css/mdui.min.css">
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  <!--highlight.js CSS-->
+  
+  
+<link rel="stylesheet" href="/css/highlight/tomorrow-night-eighties.css">
+
+  
+  
+  <!-- jquery -->
+  <script src="//cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <!-- PJAX -->
+  <script src="//cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
+  <script>
+  </script>
+  
+  <script data-pjax src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+  <script data-pjax src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  
+  
+  <!-- Google Analytics with Cloudflare Async -->
+  <script>
+    window.ga_tid = "UA-141010711-2"; // {String} The trackerID of your site.
+    window.ga_api = "https://async-google-analytics.disqusapi.workers.dev/"; // {String} The route of your cloudflare workers you just registered before.
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/cfga@1.0.1" async></script>
+  
+  
+  
+  
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <!-- Nav -->
+  <div style="display: none;" id="nav_menu" class="itp-nav-menu">
+  <div class="mdui-dialog-title">导航</div>
+  <div class="mdui-row-xs-2 mdui-nav-list" style="padding-bottom: 10px;">
+    
+    <a class="mdui-list-item mdui-ripple mdui-col" href="/">
+      <i class="mdui-list-item-icon mdui-icon material-icons itp-drawer-icon">home</i>
+      <div class="mdui-list-item-content itp-header-actions-menu" style="font-size: 14px; color: #757575;">首页
+      </div>
+    </a>
+    
+    <a class="mdui-list-item mdui-ripple mdui-col" href="/archives/">
+      <i class="mdui-list-item-icon mdui-icon material-icons itp-drawer-icon">move_to_inbox</i>
+      <div class="mdui-list-item-content itp-header-actions-menu" style="font-size: 14px; color: #757575;">归档
+      </div>
+    </a>
+    
+    <a class="mdui-list-item mdui-ripple mdui-col" href="/about.html">
+      <i class="mdui-list-item-icon mdui-icon material-icons itp-drawer-icon">person</i>
+      <div class="mdui-list-item-content itp-header-actions-menu" style="font-size: 14px; color: #757575;">关于
+      </div>
+    </a>
+    
+    <a class="mdui-list-item mdui-ripple mdui-col" href="/links.html">
+      <i class="mdui-list-item-icon mdui-icon material-icons itp-drawer-icon">link</i>
+      <div class="mdui-list-item-content itp-header-actions-menu" style="font-size: 14px; color: #757575;">友链
+      </div>
+    </a>
+    
+  </div>
+</div>
+<header id="header" class="itp-header noprn">
+  <div id="appbar-index" class="mdui-appbar mdui-appbar-fixed itp-appbar_index mdui-shadow-0">
+    <div id="toolbar-index" class="mdui-toolbar mdui-shadow-0" style="justify-content: center;">
+      <a class="mdui-btn mdui-btn-icon itp-drawer-btn itp-header-actions_menu" style="color: #fff" data-fancybox data-src="#nav_menu" href="javascript:;"><i
+          class="mdui-icon material-icons">menu</i></a>
+      <a href="/" class="itp-header-title mdui-typo-title">Java 源码</a>
+      <div class="itp-nav-action">
+        
+        <a href="/" class="mdui-btn itp-header-actions" style="color: #fff">首页</a>
+        
+        <a href="/archives/" class="mdui-btn itp-header-actions" style="color: #fff">归档</a>
+        
+        <a href="/about.html" class="mdui-btn itp-header-actions" style="color: #fff">关于</a>
+        
+        <a href="/links.html" class="mdui-btn itp-header-actions" style="color: #fff">友链</a>
+        
+      </div>
+      <div class="itp-nav-action">
+        
+        <a href="/search.html" class="mdui-btn mdui-btn-icon itp-header-search-btn"><i class="mdui-icon material-icons"
+            style="line-height: 20px;">search</i></a>
+        
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Cover -->
+  <div class="itp-cover noprn">
+  <div class="itp-cover-img">
+    
+    <img class="nofancy" src="https://imgur.lzmun.com/picgo/20200504100314.jpg">
+    
+  </div>
+  <div class="itp-cover-text">
+    <div class="itp-cover-title mdui-text-center"
+      style="color: #fff; opacity: 1;">
+      既然总想着怎么用动态博客的方法管理 Hexo 的博客文章，为什么不直接换 Typecho 呢</div>
+    <div class="itp-cover-subtitle mdui-text-center"
+      style="color: #fff; opacity: 0.8;">
+      
+2020-02-02
+<span> / </span>
+
+
+<span> / </span>
+0
+<style>
+  @media print {
+    .itp-cover-subtitle a {
+      color: #000 !important;
+    }
+  }
+
+  @media screen {
+    .itp-cover-subtitle a {
+      color: #fff !important;
+    }
+  }
+</style>
+</div>
+  </div>
+</div>
+<div class="itp-cover noscreen">
+  <div class="itp-cover-img">
+    
+    <img class="nofancy nodisplay" src="https://imgur.lzmun.com/picgo/20200504100314.jpg">
+    
+  </div>
+  <div class="itp-cover-text">
+    <div class="itp-cover-title mdui-text-center"
+      style="color: #000; opacity: 1;">
+      既然总想着怎么用动态博客的方法管理 Hexo 的博客文章，为什么不直接换 Typecho 呢</div>
+    <div class="itp-cover-subtitle mdui-text-center"
+      style="color: #000 !important; opacity: 0.8;">
+      
+2020-02-02
+<span> / </span>
+
+
+<span> / </span>
+0
+<style>
+  @media print {
+    .itp-cover-subtitle a {
+      color: #000 !important;
+    }
+  }
+
+  @media screen {
+    .itp-cover-subtitle a {
+      color: #fff !important;
+    }
+  }
+</style>
+</div>
+  </div>
+</div>
+  <!-- Main Content -->
+  
+<!--<progress id="content_progress" value="0"></progress>-->
+<div class="mdui-container">
+  <div class="content-area">
+    <div class="mdui-row">
+      <div class="mdui-col-md-2 mdui-col-xs-down"></div>
+      <div class="mdui-col-md-8 mdui-col-xs-12">
+        <div class="mdui-card itp-post-card">
+          <!--正文-->
+          <section class="mdui-card-content itp-post-content article" role="article">
+            
+          </section>
+          <!--文章底部信息-->
+          <section class="mdui-card-content itp-post-content">
+            <div class="mdui-text-center">
+              <div class="itp-post-subtitle">
+                2020-02-02
+                
+                <span> / </span>
+                0
+              </div>
+            </div>
+            
+            <div class="mdui-text-center" style="padding-top: 2px; font-size: .75rem !important;">
+              <div class="tags-links">
+                
+              </div>
+            </div>
+            
+          </section>
+          <section class="mdui-card-content itp-page-select">
+            <!--文章页页面选择器-->
+<div class="pagination noprn">
+  <div class="mdui-col-xs-6">
+    
+    <div class="itp-page-select-prev">
+      <a class="mdui-btn mdui-btn-icon" href="/source/memories-of-cities/"><i
+          class="mdui-icon material-icons">arrow_back</i></a>
+      <a class="mdui-chip-title" rel="prev" href="/source/memories-of-cities/">上一页</a>
+    </div>
+    
+  </div>
+  <div class="mdui-col-xs-6">
+    
+    <div class="itp-page-select-next  mdui-float-right">
+      <a class="mdui-chip-title" rel="next" href="/source/放假了想开学，开学了想放假/">下一页</a>
+      <a class="mdui-btn mdui-btn-icon" href="/source/放假了想开学，开学了想放假/"><i
+          class="mdui-icon material-icons">arrow_forward</i></a>
+    </div>
+    
+  </div>
+</div>
+          </section>
+          <section class="itp-post-comment noprn">
+            <!--评论-->
+
+<!--valine-->
+<div id="vcomments"></div>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '0kSi0u9r40XN3MswJG34Sj6K-gzGzoHsz',
+    appKey: '0etVoCn0nhOS5RSYOenq0sl6',
+    path: window.location.pathname,
+    avatar: 'identicon',
+    notify: true,
+    verify: true,
+    emojiCDN: '//i0.hdslb.com/bfs/emote/',
+    emojiMaps: {
+      "tv_白眼": "c1d59f439e379ee50eef488bcb5e5378e5044ea4.png",
+      "tv_doge": "6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png",
+      "tv_坏笑": "1f0b87f731a671079842116e0991c91c2c88645a.png",
+      "tv_难过": "87f46748d3f142ebc6586ff58860d0e2fc8263ba.png",
+      "tv_生气": "26702dcafdab5e8225b43ffd23c94ac1ff932654.png",
+      "tv_委屈": "d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png",
+      "tv_斜眼笑": "911f987aa8bc1bee12d52aafe62bc41ef4474e6c.png",
+      "tv_呆": "fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png",
+      "tv_发怒": "34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png",
+      "tv_惊吓": "0d15c7e2ee58e935adc6a7193ee042388adc22af.png",
+      "tv_呕吐": "9f996894a39e282ccf5e66856af49483f81870f3.png",
+      "tv_思考": "90cf159733e558137ed20aa04d09964436f618a1.png",
+      "tv_微笑": "70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png",
+      "tv_疑问": "0793d949b18d7be716078349c202c15ff166f314.png",
+      "tv_大哭": "23269aeb35f99daee28dda129676f6e9ea87934f.png",
+      "tv_鼓掌": "1d21793f96ef4e6f48b23e53e3b9e42da833a0f6.png",
+      "tv_抠鼻": "c666f55e88d471e51bbd9fab9bb308110824a6eb.png",
+      "tv_亲亲": "a8111ad55953ef5e3be3327ef94eb4a39d535d06.png",
+      "tv_调皮": "b9c41de8e82dd7a8515ae5e3cb63e898bf245186.png",
+      "tv_笑哭": "1abc628f6d4f4caf9d0e7800878f4697abbc8273.png",
+      "tv_晕": "5443c22b4d07fb1907ccc610c8e6db254f2461b7.png",
+      "tv_点赞": "f85c354995bd99e28fc76c869bfe42ba6438eff4.png",
+      "tv_害羞": "a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png",
+      "tv_色": "61822c7e9aae5da76475e7892534545336b23a6f.png",
+      "tv_吐血": "09dd16a7aa59b77baa1155d47484409624470c77.png",
+      "tv_无奈": "ea8ed89ee9878f2fece2dda0ea8a5dbfe21b5751.png",
+      "tv_再见": "180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png",
+      "tv_流汗": "cead1c351ab8d79e9f369605beb90148db0fbed3.png",
+      "tv_偷笑": "bb690d4107620f1c15cff29509db529a73aee261.png",
+      "tv_抓狂": "fe31c08edad661d63762b04e17b8d5ae3c71a757.png",
+      "tv_黑人问号": "45821a01f51bc867da9edbaa2e070410819a95b2.png",
+      "tv_困": "241ee304e44c0af029adceb294399391e4737ef2.png",
+      "tv_打脸": "56ab10b624063e966bfcb76ea5dc4794d87dfd47.png",
+      "tv_闭嘴": "c9e990da7f6e93975e25fd8b70e2e290aa4086ef.png",
+      "tv_鄙视": "6e72339f346a692a495b123174b49e4e8e781303.png",
+      "tv_腼腆": "89712c0d4af73e67f89e35cbc518420380a7f6f4.png",
+      "tv_馋": "fc7e829b845c43c623c8b490ee3602b7f0e76a31.png",
+      "tv_可爱": "9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png",
+      "tv_发财": "34db290afd2963723c6eb3c4560667db7253a21a.png",
+      "tv_生病": "8b0ec90e6b86771092a498c54f09fc94621c1900.png",
+      "tv_流鼻血": "c32d39db2737f89b904ca32700d140a9241b0767.png",
+      "tv_尴尬": "7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png",
+      "tv_大佬": "093c1e2c490161aca397afc45573c877cdead616.png",
+      "tv_流泪": "7e71cde7858f0cd50d74b0264aa26db612a8a167.png",
+      "tv_冷漠": "b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png",
+      "tv_皱眉": "72ccad6679fea0d14cce648b4d818e09b8ffea2d.png",
+      "tv_鬼脸": "0ffbbddf8a94d124ca2f54b360bbc04feb6bbfea.png",
+      "tv_调侃": "4bc022533ef31544ca0d72c12c808cf4a1cce3e3.png",
+      "tv_目瞪口呆": "0b8cb81a68de5d5365212c99375e7ace3e7891b7.png",
+    }
+  })
+</script>
+
+          </section>
+        </div>
+      </div>
+      <div class="mdui-col-md-2 mdui-col-xs-down">
+        <!--
+-->
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <!-- Footer -->
+<footer class="mdui-text-center itp-footer">
+  <section class="footer-info">
+    Java 源码 &copy; 2016 - 2020
+    
+    <span> / </span>
+    88k
+    
+    
+    
+  </section>
+  
+  </section>
+</footer>
+  <!-- After footer scripts -->
+  <!-- fancybox -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script src="/js/mdui.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+  $("code").each(function () {
+    $(this).html("<ol><li>" + $(this).html().replace(/\n/g, "\n</li><li>") + "\n</li></ol>");
+  });
+</script>
+
+
+
+<script src="/js/app.js"></script>
+
+</body>
+
+
+</html>
