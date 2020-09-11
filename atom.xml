@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://open.techstack.tech/"/>
-  <updated>2020-09-11T08:08:37.290Z</updated>
+  <updated>2020-09-11T10:05:53.950Z</updated>
   <id>https://open.techstack.tech/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  
+  <entry>
+    <title>SPPan 权限管理系统</title>
+    <link href="https://open.techstack.tech/project/SPPan%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/"/>
+    <id>https://open.techstack.tech/project/SPPan%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</id>
+    <published>2020-09-11T09:59:00.000Z</published>
+    <updated>2020-09-11T10:05:53.950Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;项目简介&quot;&gt;&lt;a href=&quot;#项目简介&quot; class=&quot;headerlink&quot; title=&quot;项目简介&quot;&gt;&lt;/a&gt;项目简介&lt;/h2&gt;&lt;p&gt;系统管理后台基本框架SPPanAdmin，包括用户管理，角色管理，资源链接管理模块，可以动态分配权限和角色，适合Java</summary>
+        
+      
+    
+    
+    
+    <category term="管理系统" scheme="https://open.techstack.tech/categories/%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+    <category term="Springboot" scheme="https://open.techstack.tech/tags/Springboot/"/>
+    
+    <category term="Mysql" scheme="https://open.techstack.tech/tags/Mysql/"/>
+    
+    <category term="Springboot Jpa" scheme="https://open.techstack.tech/tags/Springboot-Jpa/"/>
+    
+  </entry>
+  
   
   
   <entry>
